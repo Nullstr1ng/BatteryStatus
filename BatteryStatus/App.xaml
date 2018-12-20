@@ -1,0 +1,16 @@
+﻿<Application
+    x:Class="BatteryStatus.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:BatteryStatus.ViewModels"
+    xmlns:conv="using:BatteryStatus.Converters"
+    >
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <vm:ViewModelLocator x:Key="Locator" />
+
+            <conv:Converter_ExpandedTimeSpan x:Key="ExpandedTimeSpan" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
